@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.savings-container {
+    padding: 20px;
+    padding-top: 100px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 60px;
+}
+
+.savings-container h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.savings-container .savings-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.savings-container .savings-grid .card {
+    flex: 1 1 calc(40% - 10px);
+    min-width: 300px;
+    max-width: calc(50% - 10px);
+    margin-bottom: 20px;
+    border-width: 3px;
+    border-style: dashed;
+    border-radius: 8px;
+    border-color: #33333341;
+}
+
+.savings-container > .savings-grid:first-of-type {
+    margin-bottom: 40px;
+}
+
+.savings-container > .mt-4 {
+    margin-top: 2rem !important;
+}
+
+.savings-container .savings-grid .card h3 {
+    font-size: 1.2rem;
+    color: #495057;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.savings-container .mt-4 h3 {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.savings-container .savings-grid .card .card-body {
+    border-radius: 5px;
+}
+
+.savings-container .savings-grid .card .card-title {
+    font-weight: bold;
+}
+
+.savings-container .savings-grid .progress-bar {
+    background-color: inherit;
+    font-size: 0.75rem;
+}
+
+.savings-container .table {
+    margin-top: 15px;
+    font-size: 0.875rem;
+}
+
+.savings-container .table td {
+    vertical-align: middle;
+    text-align: center;
+    color: #495057;
+}
+
+.savings-container .btn {
+    background-color: #FF6B35 !important;
+    border-color: #FF6B35 !important;
+    color: white !important;
+}
+
+:lang(ar).savings-container .btn .space_when_ar {
+    margin-left: 10px;
+}
+
+.savings-container .btn:hover {
+    background-color: #E85D2E !important;
+    border-color: #E85D2E !important;
+}
+
+.savings-container .btn-custom-width {
+    width: auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.savings-container .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.savings-container .mt-2 {
+    margin-top: 0.5rem !important;
+}
+
+.savings-container .mt-3 {
+    margin-top: 1rem !important;
+}
+
+.savings-container .mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+.savings-container .mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.savings-container .w-100 {
+    width: 100% !important;
+}
+
+.savings-container .d-flex {
+    display: flex !important;
+}
+
+.savings-container .justify-content-between {
+    justify-content: space-between !important;
+}
+
+.savings-container .justify-content-center {
+    justify-content: center !important;
+}
+
+.savings-container .flex-fill {
+    flex: 1 1 auto !important;
+}
+
+.savings-container .me-3 {
+    margin-right: 1rem !important;
+}
+
+.savings-container .ms-3 {
+    margin-left: 1rem !important;
+}
+
+.savings-container .small {
+    font-size: 0.8rem !important;
+}
+
+.savings-container button {
+    margin-right: 10px;
+}
+
+.savings-container button:last-child {
+    margin-right: 0;
+}
+
+.savings-container .existing-savings.d-none {
+    display: none;
+}
+
+.savings-container .form-control {
+    margin-bottom: 10px;
+}
+
+.savings-container .edit-savings-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+  
+.savings-container .edit-savings-buttons button {
+    flex: 0 0 48%;
+}
+
+@media (max-width: 768px) {
+    .savings-container, .savings-container .mt-4 h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .savings-container .savings-grid {
+        justify-content: center;
+    }
+
+    .savings-container .savings-grid .card {
+        flex: 1 1 100%;
+        max-width: 80%;
+    }
+}
+
+
+.savings-container .notification-toast {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    width: auto;
+    max-width: 300px;
+    background-color: #ffebee;
+    border: 2px solid #ef5350;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+.savings-container .notification-toast .toast-header {
+    background-color: #ffebee;
+    color: #b71c1c;
+    border-bottom: none;
+}
+  
+.savings-container .notification-toast .toast-body {
+    color: #b71c1c;
+    padding: 12px;
+}
+  
+@media (max-width: 768px) {
+    .savings-container .notification-toast {
+        top: 90px;
+        right: 20px;
+        max-width: calc(50% - 10px);
+    }
+}
+
+.savings-container .notification-toast .toast-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.savings-container .notification-toast .toast-header .btn-close {
+    margin-inline-start: 0;
+}

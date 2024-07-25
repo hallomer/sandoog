@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.user-container {
+    padding: 20px;
+    padding-top: 100px;
+    margin-bottom: 2rem;
+    padding-bottom: 60px;
+}
+
+.user-container .welcome-header {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.user-container .welcome-header .logo-container {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: -6px;
+    margin-right: 10px;
+}
+
+.user-container .welcome-header .logo-container .sandoog-logo {
+    height: 6rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    vertical-align: middle;
+}
+
+.user-container .welcome-header .logo-container .sandoog-logo:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px teal);
+}
+
+.user-container .user-card {
+    max-width: 500px;
+    margin: 0 auto;
+    border-style: dashed;
+    border-color: #333;
+    border-width: 3px;
+    border-radius: 8px;
+    padding: 40px;
+    color: #333;
+}
+
+.user-container .user-card .password-input {
+    margin-top: 1.2rem;
+    position: relative;
+}
+
+.user-container .user-card .password-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.user-container .user-card .form-control {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center !important;
+}
+
+.user-container .user-card .password-icon {
+    position: absolute;
+    inset-inline-end: 10px;
+    cursor: pointer;
+    color: #666; 
+}
+
+.user-container .user-card .password-icon:hover {
+    color: #333;
+}
+
+.user-container .user-card .btn {
+    width: fit-content;
+    background-color: #FF6B35 !important;
+    border-color: #FF6B35 !important;
+    color: white !important;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.user-container .user-card .btn:hover {
+    background-color: #E85D2E !important;
+    border-color: #E85D2E !important;
+}
+
+.user-container .user-card .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+
+@media (max-width: 767px) {
+    .user-container .user-card {
+        margin: 40px;
+    }
+    .user-container .welcome-header .logo-container .sandoog-logo {
+        margin-left: -1.5rem;
+    }
+    .user-container .welcome-header {
+        flex-direction: column;
+    }
+}
+
+.user-container .guest-session-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 10px  
+}
+
+.user-container .guest-session-container button {
+    width: fit-content;
+    background-color: #FF6B35 !important;
+    border-color: #FF6B35 !important;
+    border-radius: 0.25rem;
+    color: white !important;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.user-container .notification-toast {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    width: auto;
+    max-width: 300px;
+    background-color: #ffebee;
+    border: 2px solid #ef5350;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.user-container .notification-toast .toast-header {
+    background-color: #ffebee;
+    color: #b71c1c;
+    border-bottom: none;
+}
+
+.user-container .notification-toast .toast-body {
+    color: #b71c1c;
+    padding: 12px;
+}
+
+@media (max-width: 768px) {
+    .user-container .notification-toast {
+        top: 90px;
+        right: 20px;
+        max-width: calc(50% - 10px);
+    }
+}
+
+.user-container .notification-toast .toast-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-container .notification-toast .toast-header .btn-close {
+    margin-inline-start: 0;
+}
+
+@media (max-width: 600px) {
+    .user-container {
+      padding: 10px;
+      padding-top: 100px;
+    }
+    
+    .user-container .welcome-header {
+      font-size: 2rem;
+    }
+  
+    .user-container .welcome-header .logo-container .sandoog-logo {
+      height: 5rem;
+      margin-top: 20px;
+    }
+  
+    .user-container .user-card {
+      margin: 20px;
+      padding: 20px;
+      border-width: 2px;
+    }
+  
+    .user-container .user-card .form-control {
+      padding: 0.75rem;
+      font-size: 0.9rem;
+    }
+  
+    .user-container .user-card .btn {
+      font-size: 0.8rem;
+      padding: 0.4rem 0.8rem;
+    }
+    
+    .user-container .guest-session-container button {
+      font-size: 0.8rem;
+      padding: 0.4rem 0.8rem;
+    }
+  
+    .user-container .notification-toast {
+      max-width: calc(80% - 20px);
+    }
+  }
